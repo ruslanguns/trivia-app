@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: white;
+  
+  background-color: $primary_color;
+  
+  .footer__copyright {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: calc(14px + 3 * ((100vw - 320px) / 680));
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+  }
+}

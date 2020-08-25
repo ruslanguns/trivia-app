@@ -1,0 +1,35 @@
+button.button {
+  margin: 5px 35px 20px ;
+  padding: 6px 15px;
+  border-radius: 5px;
+  min-height: 45px;
+  outline: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: $title_font;
+  font-weight: 800;
+  letter-spacing: 4px;
+  &:hover {
+    filter: brightness(120%);
+  }
+
+  &:disabled {
+    filter: brightness(100%);
+    cursor: no-drop;
+    background-color: darkgray;
+  }
+}
+
+button.primary {
+  background-color: $secondary_color;
+}
+
+button.danger {
+  background-color: crimson;
+}
+
+button.success {
+  background-color: darkgreen;
+}

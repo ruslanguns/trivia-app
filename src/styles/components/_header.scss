@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  color: white;
+  background-color: $primary_color;
+  
+  .header__title {
+    text-transform: uppercase;
+    font-family: $title_font;
+    letter-spacing: 2px; 
+    font-size: calc(17px + 8 * ((100vw - 320px) / 680));
+  }
+}
