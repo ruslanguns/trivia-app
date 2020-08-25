@@ -75,13 +75,16 @@ export const Trivia = ({ location, history }) => {
   }
 
   const handleCoundownCallback = () => {
-    history.push({
-      pathname: '/results',
-      state: {
-        correctAnswers,
-        timeOut: true
-      }
-    })
+    if (counter < 4) setCounter(counter+1)
+    else {
+      history.push({
+        pathname: '/results',
+        state: {
+          correctAnswers,
+          timeOut: true
+        }
+      })
+    }
   }
 
   return (
@@ -100,7 +103,7 @@ export const Trivia = ({ location, history }) => {
               <h1>Pregunta {counter + 1} / 5</h1>
               <span>Dificultad: <b>{selectedQuestion?.difficulty.toUpperCase()}</b></span>
               <span>Categoría: <b>{selectedQuestion?.category.toUpperCase()}</b></span>
-              <p style={{textAlign: 'center'}}>Tiempo restante: <b><CountDown startValue={5} callback={handleCoundownCallback}/></b></p>
+              <span>Tiempo restante: <b><CountDown startValue={10} callback={handleCoundownCallback}/></b></span>
             </div>
 
             <form>

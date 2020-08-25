@@ -147,7 +147,7 @@ export const Wizard = ({ history }) => {
         </div>
         
         <div className="wizard__footer">
-          <p>Al pulsar iniciar, usted solo tendrá <u><b>2 minutos</b></u> para contestar las preguntas.</p>
+          <p>Al pulsar iniciar, usted solo tendrá <u><b>10 segundos</b></u> por pregunta.</p>
         </div>
       </div>
     </div>

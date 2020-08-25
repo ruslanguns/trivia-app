@@ -18,7 +18,7 @@ html {
   color: $primary_color;
   width: 800px;
   border-radius: 0 2em;
-  min-height: 400px;
+  min-height: 500px;
 
   h1 {
     padding-top: 10px;
@@ -44,7 +44,8 @@ html {
     height: auto;
 
     :nth-child(2),
-    :nth-child(3) {
+    :nth-child(3),
+    :nth-child(4) {
       display: block;
       padding: 2px;
       text-align: center;
