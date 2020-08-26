@@ -16,6 +16,10 @@ export const Reset = ({ history }) => {
     if(fetchReset.result) {
       alert('Token reiniciado')
       history.push('/')
+    } else {
+      // Si hay error enviamos al home
+      localStorage.removeItem('trivia_token')
+      history.push('/')
     }
   }, [fetchReset, history])
 
