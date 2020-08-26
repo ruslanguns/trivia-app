@@ -60,7 +60,7 @@ export const Wizard = ({ history }) => {
     const time = countDownPhrases.length
     const interval$ = interval(1000).pipe(take(time))
 
-    interval$.subscribe(async val => {
+    interval$.subscribe(val => {
       setCountDown(countDownPhrases[val])
       if(countDownPhrases[val] === countDownPhrases.slice(-1)[0]) {
         history.push({
@@ -75,8 +75,6 @@ export const Wizard = ({ history }) => {
   }  
   
   // TODO: Contar las categorías /api_count.php?category={ID}
-  // * Porque si no hay, habrá que dar la opción de reiniciar la sesión.
-  // TODO: Controlar si hay menos de 5 preguntas no lanzar la TRIVIA.
 
   return (
     <div className="content">

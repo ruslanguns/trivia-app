@@ -3,7 +3,6 @@ import React from 'react'
 export const Results = ({history, location}) => {
 
   const correctAnswers = location.state?.correctAnswers
-  // if (!correctAnswers) history.push('/')
 
   return (
     <div className="content">

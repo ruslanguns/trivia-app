@@ -124,7 +124,6 @@ export const Trivia = ({ location, history }) => {
                             handleOnClick(item)
                           }}
                           style={{
-                            width: '100%',
                             margin: 6,
                             fontWeight: 400
                           }}>

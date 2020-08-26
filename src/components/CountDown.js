@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { CountDown as CounterDown } from 'mugan86-chronometer'
 
-export const CountDown = ({startValue, callback, finished}) => {
+export const CountDown = ({startValue, callback}) => {
 
   const [counterValue, setCounterValue] = useState(null)
   useEffect(() => {
@@ -9,11 +9,11 @@ export const CountDown = ({startValue, callback, finished}) => {
     let counter = countDown
       .start()
       .subscribe(data => {
-        setCounterValue(data)
         if (data === 'FINISH') {
           counter.unsubscribe()
-          callback()
+          return callback()
         }
+        setCounterValue(data)
       })
 
     return () => {
