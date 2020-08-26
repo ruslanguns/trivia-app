@@ -1,3 +1,12 @@
+# Trivia App
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/156705d3-d8d5-43b0-9eee-82e5d801aa1b/deploy-status)](https://app.netlify.com/sites/stupefied-newton-9ae252/deploys)
+
+This APP is built on top of React and it is based on the OpenTrivia DB API, [opentdb.com](opentdb.com)
+
+DEMO: [trivia.ruslan.gq](trivia.ruslan.gq)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
